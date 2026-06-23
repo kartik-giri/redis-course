@@ -26,4 +26,11 @@ stored in redis. and when ever user comes 2md time server takes the data from re
 1. List can be used as stack or queue
 2. If we follow FIFO approch it is queue and stack if we use LIFO approch. 
 
-3. brpop 0 -> blocks the pop until element is pushed in queue.
+3. brpop 0 -> blocks the pop from right side until element is pushed in queue.
+
+## Redis set
+1. Set is the collection of unique values. It does not allows duplicate values and provides efficient operaitions to add, remove or check if value exists.
+2. A  Redis set is an unordered collection of unique strings (members). You can use Redis sets to efficiently:
+- Track unique items (e.g., track all unique IP addresses accessing a given blog post).
+- Represent relations (e.g., the set of all users with a given role).
+- Perform common set operations such as intersection, unions, and differences.
