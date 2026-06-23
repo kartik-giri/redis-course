@@ -121,3 +121,5 @@ WS2 sends result to browser.
 ## Uusing redis with bun or node js
 1. Create bun project.
 2. bun add redis -> this lib allows to talk wiht redis instance.
+3. Create 2 servers one for httper -server-> which will push the jobs in queue.
+- And worker-server which will pull the job from queue and process the job stores the result push the result/event to pub/sub
